@@ -1,0 +1,45 @@
+// src/services/constants/apiEndpoints.ts
+export const API_ENDPOINTS = {
+  AUTH: {
+    LOGIN: '/api/QuanLyNguoiDung/DangNhap',
+    REGISTER: '/api/QuanLyNguoiDung/DangKy',
+    CURRENT_USER: '/api/QuanLyNguoiDung/ThongTinNguoiDung',
+    ACCOUNT_INFO: '/api/QuanLyNguoiDung/ThongTinTaiKhoan',
+  },
+  USERS: {
+    LIST: '/api/QuanLyNguoiDung/LayDanhSachNguoiDung',
+    LIST_PAGINATED: '/api/QuanLyNguoiDung/LayDanhSachNguoiDung_PhanTrang',
+    SEARCH: '/api/QuanLyNguoiDung/TimKiemNguoiDung',
+    TYPES: '/api/QuanLyNguoiDung/LayDanhSachLoaiNguoiDung',
+    CREATE: '/api/QuanLyNguoiDung/ThemNguoiDung',
+    UPDATE: '/api/QuanLyNguoiDung/CapNhatThongTinNguoiDung',
+    DELETE: '/api/QuanLyNguoiDung/XoaNguoiDung',
+    NOT_ENROLLED_FOR_COURSE: '/api/QuanLyNguoiDung/LayDanhSachNguoiDungChuaGhiDanh',
+    PENDING_APPROVAL_FOR_COURSE: '/api/QuanLyNguoiDung/LayDanhSachHocVienChoXetDuyet',
+    APPROVED_FOR_COURSE: '/api/QuanLyNguoiDung/LayDanhSachHocVienKhoaHoc',
+    COURSES_NOT_ENROLLED: '/api/QuanLyNguoiDung/LayDanhSachKhoaHocChuaGhiDanh',
+    COURSES_WAITING_APPROVAL: '/api/QuanLyNguoiDung/LayDanhSachKhoaHocChoXetDuyet',
+    COURSES_APPROVED: '/api/QuanLyNguoiDung/LayDanhSachKhoaHocDaXetDuyet',
+  },
+  COURSES: {
+    LIST: '/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc',
+    LIST_PAGINATED: '/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc_PhanTrang',
+    BY_CATEGORY: '/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc',
+    CATEGORIES: '/api/QuanLyKhoaHoc/LayDanhMucKhoaHoc',
+    DETAIL: '/api/QuanLyKhoaHoc/LayThongTinKhoaHoc',
+    STUDENTS: '/api/QuanLyKhoaHoc/LayThongTinHocVienKhoaHoc',
+    CREATE: '/api/QuanLyKhoaHoc/ThemKhoaHoc',
+    UPDATE: '/api/QuanLyKhoaHoc/CapNhatKhoaHoc',
+    DELETE: '/api/QuanLyKhoaHoc/XoaKhoaHoc',
+    ENROLL: '/api/QuanLyKhoaHoc/GhiDanhKhoaHoc',
+    REGISTER: '/api/QuanLyKhoaHoc/DangKyKhoaHoc',
+    CANCEL_ENROLL: '/api/QuanLyKhoaHoc/HuyGhiDanh',
+    UPLOAD_IMAGE: '/api/QuanLyKhoaHoc/UploadHinhAnhKhoaHoc',
+    UPLOAD_CREATE: '/api/QuanLyKhoaHoc/ThemKhoaHocUploadHinh',
+    UPLOAD_UPDATE: '/api/QuanLyKhoaHoc/CapNhatKhoaHocUpload',
+    UPLOAD_GENERIC: '/api/QuanLyKhoaHoc',
+    DEMO: '/api/QuanLyKhoaHoc/demo',
+  },
+};
+
+export default API_ENDPOINTS;
